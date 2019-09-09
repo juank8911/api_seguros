@@ -26,19 +26,19 @@ res.json(data);
 // realiza el registro de los ususarios y provedores segun si son admins o usuarios y si es por facebook o manual
 app.post('/register',(req, res)=>{
 var regist = {
-nombre: req.body.nombre,
-apellido: req.body.apellido,
-cedula: req.body.id,
-cod: req.body.codigo,
-email: req.body.email,
-password: req.body.pssw,
+  //informacion del member
+  email: req.body.email,
+  password: req.body.pssw,
+  rol: req.body.rol,
+//informacion del usuario
+cedula: req.body.cedula,
+expedia: req.body.expedia,
+nombres: req.body.nombres,
+apellidos: req.body.apellidos,
 direccion: req.body.direccion,
 tel: req.body.tel,
-admin: req.body.esAdmin,
-face: req.body.face,
-parent: 17,
-avatar: req.body.avatar,
-nit:req.body.nit,
+movil: req.body.movil
+
 };
 console.log('//*/*/*Registro/*/*///');
 console.log(regist);
